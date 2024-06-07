@@ -1,4 +1,6 @@
-﻿// using aulinha.db;
+﻿using aulinha.db;
+
+using System.Linq;
 
 // using (var db = new DbLivrariaContext()) {
 //     foreach (var autor in db.TbAutor) {
@@ -55,7 +57,7 @@
 
 using (var db = new DbLivrariaContext())
 {
-    var autor = db.TbAuto.SingleDefault(a => a.IdAutor == 6);
+    var autor = db.TbAutor.SingleDefault(a => a.IdAutor == 6);
 
     if (autor != null)
     {
